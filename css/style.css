@@ -1,0 +1,192 @@
+@import "general.css";
+
+/* Main Section */
+#main-section {
+    min-height: 100vh;
+    background: #fff;
+}
+
+/* .main-container {} */
+
+.titl {
+    Padding: 13rem 5rem;
+}
+
+.name {
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.jop-name {
+    font-family: "Sacramento";
+    color: var(--primary-color);
+    font-weight: 200;
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+.main-container img {
+    width: 32rem;
+    height: 20rem;
+    position: absolute;
+    right: 5rem;
+    top: 13rem;
+    box-shadow: var(--shadow);
+}
+
+.quotes {
+    text-align: left;
+    font-size: 1.25rem;
+    color: #000;
+    Padding: 2rem;
+}
+
+/* START Info Section */
+
+#info-section {
+    background: #fff;
+    Padding: 1.5rem;
+}
+
+/* .info-container {} */
+
+.info-container a {
+    transition: 0.5s ease;
+    color: #000;
+    font-style: italic;
+}
+
+.info-container a:hover {
+    color: var(--links);
+}
+
+/* END Info Section */
+
+
+/* START Projects Section */
+
+#apps-section {
+    background: #f0f0f0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.apps-container {
+    width: 100%;
+    margin: auto;
+}
+
+.apps-container h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.apps-container .cards {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.apps-container .card {
+    border-radius: var(--card-border-radius);
+    background: #fff;
+    width: 15rem;
+    height: 22rem;
+    box-shadow: var(--shadow);
+    transition: 0.7s ease;
+    margin: 2rem auto;
+}
+
+.apps-container .card:hover {
+    transform: scale(1.1);
+}
+
+.apps-container .card img {
+    width: 15rem;
+    height: 10rem;
+    border-radius: var(--card-border-radius);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.apps-container .card .info {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.apps-container .card h4 {
+    color: #000;
+    transition: 0.5s ease;
+    display: inline-block;
+}
+
+.apps-container .card h4:hover {
+    color: var(--links);
+}
+
+.apps-container .card p {
+    padding-top: 1rem;
+    text-align: left;
+}
+
+/* END Projects Section */
+
+@media only screen and (max-width: 1200px) {
+    /* Tablets [601px -> 1100px] */
+
+    header .navigations {}
+
+    .titl {}
+
+    .main-container img {}
+
+    .quotes {}
+
+    .skills-icons {}
+}
+
+@media only screen and (max-width: 992px) {
+    /* Big Smartphones [426px -> 600px] */
+
+    header .container i {}
+
+    nav {}
+
+    nav ul.navigations {}
+
+    .name {}
+
+    .jop-name {}
+
+    .main-container img {}
+
+    .quotes {}
+
+    .skills-icons {}
+}
+
+@media only screen and (max-width: 425px) {
+    /* Small Smartphones [325px -> 425px] */
+}
+
+
+a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+
+
+/* a[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -100%;
+    left: 0;
+} */

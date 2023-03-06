@@ -1,0 +1,61 @@
+@import "general.css";
+
+.form-container {
+    background: #f0f0f0;
+    min-height: 10vh;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+    width: 55%;
+    margin: auto;
+    padding: 8rem;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.massage {
+    height: 20rem;
+    resize: none;
+}
+
+.send {
+    background: var(--secondary-color);
+    width: 10rem;
+    margin: auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+.send:hover {
+    opacity: 0.8;
+}
+
+input,
+textarea,
+button {
+    padding: var(--search-padding);
+    border-radius: var(--border-radius);
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+
+/* END Form */
+
+@media only screen and (max-width: 1200px) {
+    /* Tablets [601px -> 1200px] */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Big Smartphones [426px -> 600px] */
+}
+
+@media only screen and (max-width: 425px) {
+    /* Small Smartphones [325px -> 425px] */
+}
